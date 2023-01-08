@@ -743,7 +743,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: 226px;
+    flex-basis: calc(33.3333333333% - 90px);
   }
 }
 @media screen and (min-width: 1200px) {
