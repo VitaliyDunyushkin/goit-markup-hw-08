@@ -1,0 +1,123 @@
+/*-------- Portfolio------------------*/
+
+.portfolio {
+    padding: 94px 0;
+}
+
+/*-------- Portfolio Filters------------------*/
+
+.filters-list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.filters-list li+li {
+    margin-left: 8px;
+}
+
+.filters-item {
+    padding: 6px 22px;
+    border: none;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--second-color);
+    background: var(--bckgd-color);
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--third-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+}
+
+
+
+/*-------- Portfolio Portfolio------------------*/
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.portfolio-item {
+    flex-basis: calc(100%/3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+
+    background: var(--third-color);
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item-description {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--third-color);
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link {
+    display: block;
+    color: inherit;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover .portfolio-item-description {
+            transform: translateY(0%);
+        }
+}
+
+
+.portfolio-item-bag {
+    padding: 20px 24px;
+
+    border: 1px solid var(--prtf-bord-color);
+    border-top: none;
+}
+
+
+.portfolio-item-hearder {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--second-color);
+}
+
+.portfolio-item-text {
+    font-size: 16px;
+    line-height: 1.88;
+}

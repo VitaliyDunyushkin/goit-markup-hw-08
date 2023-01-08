@@ -1,0 +1,54 @@
+
+.our-work{
+    display: none;
+}
+
+
+@media screen and (min-width:1200px) {
+    .our-work {
+        display: block;
+        padding-bottom: 94px;
+    }
+
+    .our-work__hearder {
+        margin-bottom: 50px;
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        color: var(--second-color);
+    }
+
+    .our-work__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .our-work__box {
+        position: relative;
+    }
+
+    .our-work__text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--third-color);
+
+        background: rgba(47, 48, 58, 0.8);
+    }
+
+}
+
+
