@@ -261,22 +261,30 @@
 }
 .mob-menu__tel{
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
 
     font-weight: 500;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1.17;
     letter-spacing: 0.02em;
 
     color: #2196F3;
+
+    @media screen and (min-width:480px) {
+        font-size: 34px;
+    }
 }
 .mob-menu__mail {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.02em;
 
     color: #757575;
+
+    @media screen and (min-width:480px) {
+            font-size: 24px;
+        }
 }
 
 
@@ -302,11 +310,16 @@
 }
 .mob-menu__soc-link{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.22px;
     letter-spacing: 0.02em;
 
     color: #2196F3;
+
+
+    @media screen and (min-width:480px) {
+            font-size: 18px;
+    }
 }
 
 
