@@ -16,6 +16,10 @@ footer {
 .logo--footer{
     margin-bottom: 20px;
     text-align: center;
+
+    @media screen and (min-width:1200px) {
+            text-align: left;
+    }
 }
 
 
@@ -91,6 +95,7 @@ footer {
 
     @media screen and (min-width:1200px) {
         align-items: flex-end;
+        width: 570px;
     }
 }
 
@@ -155,7 +160,7 @@ footer {
     }
 
     @media screen and (min-width:1200px) {
-            //width: 358px;
+            width: 358px;
     }
     
 }
